@@ -2,12 +2,12 @@ package DesignPatterns.Creational.Builder;
 
 public class SettlementDirector {
 
-    public City build(CityBuilder cityBuilder) {
+    public Settlement build(SettlementBuilder builder) {
 
-        cityBuilder.createCity();
-        cityBuilder.addFarm();
-        cityBuilder.addMill();
+        builder.buildSettlement();
+        builder.addForge();
+        builder.addBakery();
 
-        return cityBuilder.getCity();
+        return builder.Settlement();
     }
 }

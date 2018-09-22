@@ -1,14 +1,14 @@
 package DesignPatterns.Creational.AbstractFactory;
 
-public class BritonsBuildingsFactory implements BuildingsFactory {
+public class CeltsBuildingsFactory implements BuildingsFactory {
 
     @Override
     public Forge getForge() {
-        return new BritonsForge();
+        return new CeltsForge();
     }
 
     @Override
     public Bakery getBakery() {
-        return new BritonsBakery();
+        return new CeltsBakery();
     }
 }

@@ -1,7 +1,7 @@
 package DesignPatterns.Creational.AbstractFactory;
 
 public interface BuildingsFactory {
-    Farm createFarm();
+    Forge getForge();
 
-    Mill createMill();
+    Bakery getBakery();
 }
